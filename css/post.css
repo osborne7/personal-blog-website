@@ -2,11 +2,100 @@
 
 
 .featured-photo {
-    height: 15%;
-    width: 15%;
+    height: auto%;
+    width: 80%;
     padding: 2em;
     /* margin: 1em; */
-    float: left;
-    margin-bottom: 1em;
+    /* float: left; */
+    /* display: inline; */
+    /* vertical-align: top; */
+    margin-right: 1em; 
+
+    /* margin-bottom: 1em; */
 }
 
+.author-photo {
+    height: auto;
+    width: 50%;
+}
+
+.about {
+    text-align: center;
+    /* border-left-style: solid;
+    border-color: #301934;
+    border-width: 1px; */
+    padding: 2em 1em 3em 1em;
+    margin: 0.2em 0em;
+}
+
+.aboutsocial li{
+    display: inline-block;
+}
+
+/* figcaption {
+    display: flex;
+} */
+
+figure {
+    float: left;
+    width: 50%
+    /* display: inline-block; */
+}
+
+figcaption {
+    text-align: center;
+    font-size: smaller;
+}
+
+
+@media(min-width: 565px) {
+    body {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 78% 20%;
+        /* grid-template-rows: 20vw 45vw 10vw; */
+        /* grid-template-rows: 25% 67% 5%; */
+        grid-auto-rows: minmax(100px 1fr);
+        /* grid-template-rows: 20vw 45vw 10vw; */
+        /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; */
+        grid-gap: 1em;
+        grid-template-areas:
+        "hd hd"
+        "main sd"
+        "ft ft";
+    }
+
+    .head {
+        grid-area: hd;
+    }
+    
+    .card {
+        grid-area: main;
+        margin: 0em;
+    }
+    
+    .about {
+        grid-area: sd;
+        padding: 1em;
+
+        /* align-self: end; */
+    }
+    
+    footer {
+        grid-area: ft;
+    }
+    
+    .title {
+        font-size: 400%;
+    }
+
+    .card p {
+        font-size: 135%;
+    }
+
+    .author-photo {
+        height: auto;
+        width: 100%;
+    }
+}

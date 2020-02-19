@@ -42,6 +42,7 @@ a {
 
 a:hover {
     color: #301934;
+    font-weight: bold;
 }
 /* Navigation Bar */
 
@@ -62,7 +63,6 @@ a:hover {
 }
 
 .right-bar {
-
     align-self: center;
     /* padding: .5em; */
     background: 
@@ -100,6 +100,7 @@ a:hover {
 
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    /* display: inline-block; */
     transition: 0.3s;
     font-size: larger;
     /* margin-bottom: 1em; */
@@ -115,51 +116,6 @@ a:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-/* Feature */
-
-/* .featured-photo {
-    height: 15%;
-    width: 15%;
-    padding: 2em;
-    /* margin: 1em; */
-    /* float: left;
-    margin-bottom: 1em;
-} */
-
-.featured-photo {
-    display: none;
-}
-
-.sidebar {
-    text-shadow: .2px .2px gray;
-    
-}
-
-
-.post2 {
-    background: linear-gradient(rgba(250, 238, 216, 0.7),
-    rgba(250, 238, 216, 0.7)), 
-    url(../img/books.jpg);
-    background-repeat: no-repeat;
-    background-size: auto, cover;
-    margin: 1em 0em;
-    padding: 2em 1em 3em 1em;
-
-}
-
-
-
-.post3 {
-    background: linear-gradient(rgba(250, 238, 216, 0.7),
-    rgba(250, 238, 216, 0.7)),  
-    url(../img/seine.jpg);
-    background-size: auto, cover;
-    padding: 2em 1em 3em 1em;
-    /* margin-top: 2em; */
-
-
-}
-
 
 /* Footer */
 footer {
@@ -168,70 +124,20 @@ footer {
     margin-top: 3em;
     text-align: center;
     font-family: 'Parisienne', cursive;
-
-
 }
 
-
-
-/* CSS for medium screens */
-
-@media(min-width: 565px) {
-    body {
-        display: grid;
-        width: 100%;
-        grid-template-columns: 65% 35%;
-        /* grid-template-rows: 20vw 45vw 10vw; */
-        /* grid-template-rows: 25% 67% 5%; */
-        grid-auto-rows: minmax(100px 1fr);
-        /* grid-template-rows: 20vw 45vw 10vw; */
-        /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; */
-        grid-gap: 1em;
-        grid-template-areas:
-        "hd hd"
-        "main sd"
-        "ft ft";
-        /* margin: 2em 2em 2em 2em; */
-    }
-
-    .head {
-        grid-area: hd;
-    }
-    
-    .card {
-        grid-area: main;
-        margin: 0em;
-    }
-    
-    .sidebar {
-        grid-area: sd;
-        align-self: center;
-    
-    }
-    
-    footer {
-        grid-area: ft;
-    }
-
-    .post3 {
-        margin: 1em 0em 0em 0em;
-    }
-    
-    .title {
-        font-size: 400%;
-    }
-
-    .post2 {
-        margin: 0em;
-    }
-
-    .card p {
-        font-size: 135%;
-    }
-
-
-
-
+.submit {
+    background-color: #4d0013;
+    border: none;
+    color: #faeed8;
+    padding: 1em;
+    text-align: center;
+    margin: 1em;
+    cursor: pointer;
 }
+
+.submit:hover {
+    background-color: #301934;
+}
+
 

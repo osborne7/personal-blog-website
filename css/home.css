@@ -1,0 +1,89 @@
+.sidebar {
+    text-shadow: .2px .2px gray;
+}
+
+
+.post2 {
+    background: linear-gradient(rgba(250, 238, 216, 0.7),
+    rgba(250, 238, 216, 0.7)), 
+    url(../img/books.jpg);
+    background-repeat: no-repeat;
+    background-size: auto, cover;
+    margin: 1em 0em;
+    padding: 2em 1em 3em 1em;
+
+}
+
+
+
+.post3 {
+    background: linear-gradient(rgba(250, 238, 216, 0.7),
+    rgba(250, 238, 216, 0.7)),  
+    url(../img/seine.jpg);
+    background-size: auto, cover;
+    padding: 2em 1em 3em 1em;
+    /* margin-top: 2em; */
+
+
+}
+
+
+/* CSS for medium screens */
+
+@media(min-width: 565px) {
+    body {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 65% 33%;
+        /* grid-template-rows: 20vw 45vw 10vw; */
+        /* grid-template-rows: 25% 67% 5%; */
+        grid-auto-rows: minmax(100px 1fr);
+        /* grid-template-rows: 20vw 45vw 10vw; */
+        /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; */
+        grid-gap: 1em;
+        grid-template-areas:
+        "hd hd"
+        "main sd"
+        "ft ft";
+        /* margin: 2em 2em 2em 2em; */
+    }
+
+    .head {
+        grid-area: hd;
+    }
+    
+    .card {
+        grid-area: main;
+        margin: 0em;
+    }
+    
+    .sidebar {
+        grid-area: sd;
+        /* align-self: center; */    
+    }
+    
+    footer {
+        grid-area: ft;
+    }
+
+    .post3 {
+        margin: 1em 0em 0em 0em;
+    }
+    
+    .title {
+        font-size: 400%;
+    }
+
+    .post2 {
+        margin: 0em;
+    }
+
+    .card p {
+        font-size: 135%;
+    }
+
+/* add one more breakpoint? */
+
+
+}
