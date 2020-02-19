@@ -1,15 +1,28 @@
-/* add the image and image caption in this page */
-
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    /* display: flex; */
+    /* flex-flow: column; */
+    transition: 0.3s;
+    font-size: larger;
+    /* margin-bottom: 1em; */
+    background: linear-gradient(rgba(250, 238, 216, 0.7),
+    rgba(250, 238, 216, 0.7)), 
+    url(../img/pariscafe.jpg);
+    background-size: cover;
+    padding: 2em 1em 3em 1em;
+    margin: 1em 0em;
+}
 
 .featured-photo {
-    height: auto%;
-    width: 80%;
-    padding: 2em;
+    height: auto;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    /* padding: 2em; */
     /* margin: 1em; */
     /* float: left; */
     /* display: inline; */
     /* vertical-align: top; */
-    margin-right: 1em; 
+    /* margin-right: 1em;  */
 
     /* margin-bottom: 1em; */
 }
@@ -17,6 +30,8 @@
 .author-photo {
     height: auto;
     width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
 }
 
 .about {
@@ -25,41 +40,48 @@
     border-color: #301934;
     border-width: 1px; */
     padding: 2em 1em 3em 1em;
-    margin: 0.2em 0em;
+    /* margin: 0.2em 0em; */
+    border-bottom: #301934;
+    border-style: solid;
 }
 
 .aboutsocial li{
     display: inline-block;
+    padding: 1em;
 }
 
 /* figcaption {
     display: flex;
 } */
 
-figure {
-    float: left;
-    width: 50%
-    /* display: inline-block; */
-}
 
 figcaption {
+    padding-top: 1em;
     text-align: center;
     font-size: smaller;
 }
 
+.card h2 {
+    /* display: inline; */
+    /* color: white;
+    font-size: 110%; */
+    text-align: center;
+    padding: 0em 1em 1em 1em;
+}
 
-@media(min-width: 565px) {
+
+@media(min-width: 660px) {
     body {
         display: grid;
-        width: 100%;
-        grid-template-columns: 78% 20%;
+        width: 99%;
+        grid-template-columns: 78% 21%;
         /* grid-template-rows: 20vw 45vw 10vw; */
         /* grid-template-rows: 25% 67% 5%; */
         grid-auto-rows: minmax(100px 1fr);
         /* grid-template-rows: 20vw 45vw 10vw; */
         /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; */
-        grid-gap: 1em;
+        grid-gap: 1%;
         grid-template-areas:
         "hd hd"
         "main sd"
@@ -74,10 +96,17 @@ figcaption {
         grid-area: main;
         margin: 0em;
     }
+
+    /* .card h2 {
+        font-size: 150%;
+        color: black;
+    } */
     
     .about {
         grid-area: sd;
-        padding: 1em;
+        /* padding: 1em; */
+        padding-top: 0em;
+        border-style: none;
 
         /* align-self: end; */
     }
@@ -98,4 +127,5 @@ figcaption {
         height: auto;
         width: 100%;
     }
+    
 }

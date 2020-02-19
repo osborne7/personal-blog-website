@@ -1,58 +1,25 @@
-/* Import CSS for larger screens and post page*/
-/* @import "medium-screen.css";
-@import "large-screen.css";
-@import "post.css"; */
+/* Import CSS for universal styling, homepage, and post page*/
+@import "home.css";
+@import "post.css";
+@import "universal.css";
 
+/* small change for small cell phones */
 
-/* General Rules */
-
-body {
-    background-color:  #faeed8;
-    font-family: 'Prata', serif;
+@media(max-width: 412px) {
+    .head {
+        font-size: small;
+    }
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 1em;
-}
 
-a {
-    color: #4d0013;
-    text-decoration: none;
-    cursor: pointer;
-}
 
-.title {
-    font-family: 'Prata', serif;
-    font-family: 'Parisienne', cursive;
-    align-self: center;
-}
 
-p {
-    font-family: 'Montserrat', sans-serif;
-    color: #565656;
-
-}
-
-a {
-    color: #4d0013;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #301934;
-    font-weight: bold;
-}
 /* Navigation Bar */
 
 #main-nav {
-    /* display: inline; */
     align-self: center;
     font-size: 120%;
-    /* justify-self: start; */
-    /* float: left; */
-    /* padding-left: 1em; */
+    padding-left: 1em;
 }
 
 .archives, .contact {
@@ -63,18 +30,21 @@ a:hover {
 }
 
 .right-bar {
+    text-align: center;
     align-self: center;
     /* padding: .5em; */
+    margin-right: 0.5em;
     background: 
     linear-gradient(rgba(250, 238, 216, 0.3),
     rgba(250, 238, 216, 0.5));
-    margin: 1em 2em 2em 1em;
+    /* margin: 1em 2em 2em 1em; */
 }
 
 
 .fa {
     font-size: 5em;
-    padding: 1em;
+    padding: 0.5em 0em;
+    /* padding: 1em 1em 1em 0em; */
 }
 
 .head {
@@ -98,19 +68,7 @@ a:hover {
 
 /* Card */
 
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    /* display: inline-block; */
-    transition: 0.3s;
-    font-size: larger;
-    /* margin-bottom: 1em; */
-    background: linear-gradient(rgba(250, 238, 216, 0.7),
-    rgba(250, 238, 216, 0.7)), 
-    url(../img/pariscafe.jpg);
-    background-size: cover;
-    padding: 2em 1em 3em 1em;
-    margin: 1em 0em;
-}
+/* moved main card content to home */
 
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);

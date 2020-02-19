@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>11th Arrondissement Cafes</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Prata|Parisienne&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/post.css">
+    <!-- <link rel="stylesheet" href="css/post.css"> -->
     <link rel="stylesheet" href="css/main.css">
     
     <!-- <link rel="stylesheet" href="css/medium-screen.css">
@@ -31,13 +31,16 @@
         </header>
                 <div class="card">
                     <p class="date">02.05</p>
-                    <figure>
-                        <img src="img/cafe2.jpg" alt="Paris Cafe in Winter" class="featured-photo">
-                        <figcaption>La Bossue, January 2020</figcaption>
-                    </figure>
-                       
-                        <h2><b>11th Arrondissement Cafes</b></h2>
+                    <h2><b>11th Arrondissement Cafes</b></h2>
 
+                    <figure>
+                        <picture>
+                            <source media="(max-width: 700px)" srcset="img/cafe2_small.jpg">
+                            <source media="(min-width: 701px)" srcset="img/cafe2.jpg">
+                        <img src="img/cafe2.jpg" alt="Paris Cafe in Winter" class="featured-photo">
+                        </picture>
+                        <figcaption>Le Saint Jean, January 2020</figcaption>
+                    </figure>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                             incididunt ut labore et dolore magna aliqua. <q>Nec tincidunt praesent semper feugiat 
                             nibh sed pulvinar proin. In fermentum et sollicitudin ac orci phasellus egestas 
@@ -72,9 +75,12 @@
 
                 </div>
                 <div class="about">
-                    <img src="img/avatar2.jpeg" alt="" class="author-photo">
-                    <h2><u>About Me</u></h2>
-                        <p>Nellie</p>
+                        <picture>
+                                <source media="(max-width: 700px)" srcset="img/avatar2_small.jpeg">
+                                <source media="(min-width: 701px)" srcset="img/avatar2.jpeg">
+                                    <img src="img/avatar2.jpeg" alt="" class="author-photo">
+                                    <h2><u>About Me</u></h2>
+                        <p>Nellie Osborne</p>
                         <p>Audio Mixer</p>
                         <p>Gramercy Post</p>
                         <p>Learning to code and being a Francophile! Lorem mollis aliquam ut porttitor leo a diam. Enim nec dui 

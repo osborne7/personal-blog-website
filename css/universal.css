@@ -1,0 +1,41 @@
+/* General Rules */
+
+body {
+    background-color:  #faeed8;
+    font-family: 'Prata', serif;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 1em 0.5em 1em 0em;
+}
+
+a {
+    color: #4d0013;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.title {
+    font-family: 'Prata', serif;
+    font-family: 'Parisienne', cursive;
+    align-self: center;
+    text-align: center;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    color: #565656;
+
+}
+
+/* a {
+    color: #4d0013;
+    text-decoration: none;
+} */
+
+a:hover {
+    color: #301934;
+    font-weight: bold;
+}
