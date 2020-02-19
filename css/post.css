@@ -1,10 +1,7 @@
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    /* display: flex; */
-    /* flex-flow: column; */
     transition: 0.3s;
     font-size: larger;
-    /* margin-bottom: 1em; */
     background: linear-gradient(rgba(250, 238, 216, 0.7),
     rgba(250, 238, 216, 0.7)), 
     url(../img/pariscafe.jpg);
@@ -17,14 +14,6 @@
     height: auto;
     width: 100%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
-    /* padding: 2em; */
-    /* margin: 1em; */
-    /* float: left; */
-    /* display: inline; */
-    /* vertical-align: top; */
-    /* margin-right: 1em;  */
-
-    /* margin-bottom: 1em; */
 }
 
 .author-photo {
@@ -36,11 +25,7 @@
 
 .about {
     text-align: center;
-    /* border-left-style: solid;
-    border-color: #301934;
-    border-width: 1px; */
     padding: 2em 1em 3em 1em;
-    /* margin: 0.2em 0em; */
     border-bottom: #301934;
     border-style: solid;
 }
@@ -50,11 +35,6 @@
     padding: 1em;
 }
 
-/* figcaption {
-    display: flex;
-} */
-
-
 figcaption {
     padding-top: 1em;
     text-align: center;
@@ -62,9 +42,6 @@ figcaption {
 }
 
 .card h2 {
-    /* display: inline; */
-    /* color: white;
-    font-size: 110%; */
     text-align: center;
     padding: 0em 1em 1em 1em;
 }
@@ -75,12 +52,7 @@ figcaption {
         display: grid;
         width: 99%;
         grid-template-columns: 78% 21%;
-        /* grid-template-rows: 20vw 45vw 10vw; */
-        /* grid-template-rows: 25% 67% 5%; */
         grid-auto-rows: minmax(100px 1fr);
-        /* grid-template-rows: 20vw 45vw 10vw; */
-        /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; */
         grid-gap: 1%;
         grid-template-areas:
         "hd hd"
@@ -96,19 +68,15 @@ figcaption {
         grid-area: main;
         margin: 0em;
     }
-
-    /* .card h2 {
-        font-size: 150%;
-        color: black;
-    } */
     
+    .card p {
+        font-size: 135%;
+    }
+
     .about {
         grid-area: sd;
-        /* padding: 1em; */
         padding-top: 0em;
         border-style: none;
-
-        /* align-self: end; */
     }
     
     footer {
@@ -117,10 +85,6 @@ figcaption {
     
     .title {
         font-size: 400%;
-    }
-
-    .card p {
-        font-size: 135%;
     }
 
     .author-photo {

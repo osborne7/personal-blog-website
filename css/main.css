@@ -4,18 +4,13 @@
 @import "universal.css";
 
 /* small change for small cell phones */
-
 @media(max-width: 412px) {
     .head {
         font-size: small;
     }
 }
 
-
-
-
 /* Navigation Bar */
-
 #main-nav {
     align-self: center;
     font-size: 120%;
@@ -26,25 +21,20 @@
 
     font-family: 'Parisienne', cursive;
     padding: 0.5em;
-    /* margin: 1em; */
 }
 
 .right-bar {
     text-align: center;
     align-self: center;
-    /* padding: .5em; */
     margin-right: 0.5em;
     background: 
     linear-gradient(rgba(250, 238, 216, 0.3),
     rgba(250, 238, 216, 0.5));
-    /* margin: 1em 2em 2em 1em; */
 }
-
 
 .fa {
     font-size: 5em;
     padding: 0.5em 0em;
-    /* padding: 1em 1em 1em 0em; */
 }
 
 .head {
@@ -54,7 +44,6 @@
     rgba(250, 238, 216, 0.5)),
                 url("../img/rooftops.jpg") 0 350px;
     justify-content: space-between;
-    /* padding: 0; */
     margin-bottom: 1em;
 }
 
@@ -67,18 +56,13 @@
 }
 
 /* Card */
-
-/* moved main card content to home */
-
+/* main card content in home.css */
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-
 /* Footer */
 footer {
-    /* display: flex; */
-    /* justify-content: space-around; */
     margin-top: 3em;
     text-align: center;
     font-family: 'Parisienne', cursive;
@@ -97,5 +81,3 @@ footer {
 .submit:hover {
     background-color: #301934;
 }
-
-

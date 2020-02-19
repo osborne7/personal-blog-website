@@ -1,9 +1,7 @@
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    /* display: inline-block; */
     transition: 0.3s;
     font-size: larger;
-    /* margin-bottom: 1em; */
     background: linear-gradient(rgba(250, 238, 216, 0.7),
     rgba(250, 238, 216, 0.7)), 
     url(../img/pariscafe.jpg);
@@ -28,8 +26,6 @@
     background-size: auto, cover;
     margin: 1em 0em;
     padding: 2em 1em 3em 1em;
-    /* display: inline-block; */
-
 }
 
 
@@ -40,32 +36,20 @@
     url(../img/seine.jpg);
     background-size: auto, cover;
     padding: 2em 1em 3em 1em;
-    /* display: block; */
-    /* margin-top: 2em; */
-
-
 }
 
-
-/* CSS for medium and large screens*/
-
+/* Medium and large screens*/
 @media(min-width: 745px) {
     body {
         display: grid;
         width: 99%;
         grid-template-columns: 65% 34%;
-        /* grid-template-rows: 20vw 45vw 10vw; */
-        /* grid-template-rows: 25% 67% 5%; */
         grid-auto-rows: minmax(100px 1fr);
-        /* grid-template-rows: 20vw 45vw 10vw; */
-        /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; */
         grid-gap: 1%;
         grid-template-areas:
         "hd hd"
         "main sd"
         "ft ft";
-        /* margin: 2em 2em 2em 2em; */
     }
 
     .head {
@@ -79,7 +63,6 @@
     
     .sidebar {
         grid-area: sd;
-        /* align-self: center; */    
     }
     
     footer {
@@ -101,8 +84,4 @@
     .card p {
         font-size: 135%;
     }
-
-/* add one more breakpoint? */
-
-
 }
