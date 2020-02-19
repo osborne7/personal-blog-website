@@ -1,13 +1,237 @@
+/* Import CSS for larger screens and post page*/
+/* @import "medium-screen.css";
+@import "large-screen.css";
+@import "post.css"; */
+
+
 /* General Rules */
 
 body {
-    background-color: #faeed8;
+    background-color:  #faeed8;
+    font-family: 'Prata', serif;
 }
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 1em;
+}
 
+a {
+    color: #4d0013;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.title {
+    font-family: 'Prata', serif;
+    font-family: 'Parisienne', cursive;
+    align-self: center;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    color: #565656;
+
+}
+
+a {
+    color: #4d0013;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #301934;
+}
 /* Navigation Bar */
 
-#eiffel-tower {
-    height: 25%;
-    width: 25%;
+#main-nav {
+    /* display: inline; */
+    align-self: center;
+    font-size: 120%;
+    /* justify-self: start; */
+    /* float: left; */
+    /* padding-left: 1em; */
 }
+
+.archives, .contact {
+
+    font-family: 'Parisienne', cursive;
+    padding: 0.5em;
+    /* margin: 1em; */
+}
+
+.right-bar {
+
+    align-self: center;
+    /* padding: .5em; */
+    background: 
+    linear-gradient(rgba(250, 238, 216, 0.3),
+    rgba(250, 238, 216, 0.5));
+    margin: 1em 2em 2em 1em;
+}
+
+
+.fa {
+    font-size: 5em;
+    padding: 1em;
+}
+
+.head {
+    display: flex;
+    background: 
+    linear-gradient(rgba(250, 238, 216, 0.5),
+    rgba(250, 238, 216, 0.5)),
+                url("../img/rooftops.jpg") 0 350px;
+    justify-content: space-between;
+    /* padding: 0; */
+    margin-bottom: 1em;
+}
+
+.date {
+    color: #A9A9A9;
+    text-align: end;
+    font-size: smaller;
+    margin: 0;
+
+}
+
+/* Card */
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    font-size: larger;
+    /* margin-bottom: 1em; */
+    background: linear-gradient(rgba(250, 238, 216, 0.7),
+    rgba(250, 238, 216, 0.7)), 
+    url(../img/pariscafe.jpg);
+    background-size: cover;
+    padding: 2em 1em 3em 1em;
+    margin: 1em 0em;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Feature */
+
+/* .featured-photo {
+    height: 15%;
+    width: 15%;
+    padding: 2em;
+    /* margin: 1em; */
+    /* float: left;
+    margin-bottom: 1em;
+} */
+
+.featured-photo {
+    display: none;
+}
+
+.sidebar {
+    text-shadow: .2px .2px gray;
+    
+}
+
+
+.post2 {
+    background: linear-gradient(rgba(250, 238, 216, 0.7),
+    rgba(250, 238, 216, 0.7)), 
+    url(../img/books.jpg);
+    background-repeat: no-repeat;
+    background-size: auto, cover;
+    margin: 1em 0em;
+    padding: 2em 1em 3em 1em;
+
+}
+
+
+
+.post3 {
+    background: linear-gradient(rgba(250, 238, 216, 0.7),
+    rgba(250, 238, 216, 0.7)),  
+    url(../img/seine.jpg);
+    background-size: auto, cover;
+    padding: 2em 1em 3em 1em;
+    /* margin-top: 2em; */
+
+
+}
+
+
+/* Footer */
+footer {
+    /* display: flex; */
+    /* justify-content: space-around; */
+    margin-top: 3em;
+    text-align: center;
+    font-family: 'Parisienne', cursive;
+
+
+}
+
+
+
+/* CSS for medium screens */
+
+@media(min-width: 565px) {
+    body {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 65% 35%;
+        /* grid-template-rows: 20vw 45vw 10vw; */
+        /* grid-template-rows: 25% 67% 5%; */
+        grid-auto-rows: minmax(100px 1fr);
+        /* grid-template-rows: 20vw 45vw 10vw; */
+        /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; */
+        grid-gap: 1em;
+        grid-template-areas:
+        "hd hd"
+        "main sd"
+        "ft ft";
+        /* margin: 2em 2em 2em 2em; */
+    }
+
+    .head {
+        grid-area: hd;
+    }
+    
+    .card {
+        grid-area: main;
+        margin: 0em;
+    }
+    
+    .sidebar {
+        grid-area: sd;
+        align-self: center;
+    
+    }
+    
+    footer {
+        grid-area: ft;
+    }
+
+    .post3 {
+        margin: 1em 0em 0em 0em;
+    }
+    
+    .title {
+        font-size: 400%;
+    }
+
+    .post2 {
+        margin: 0em;
+    }
+
+    .card p {
+        font-size: 135%;
+    }
+
+
+
+
+}
+

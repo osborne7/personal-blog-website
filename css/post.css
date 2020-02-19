@@ -1,0 +1,12 @@
+/* add the image and image caption in this page */
+
+
+.featured-photo {
+    height: 15%;
+    width: 15%;
+    padding: 2em;
+    /* margin: 1em; */
+    float: left;
+    margin-bottom: 1em;
+}
+
